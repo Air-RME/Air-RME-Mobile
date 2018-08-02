@@ -1,0 +1,755 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Lato', 'Noto Sans Japanese', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.left_side {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: #F3F2EE;
+}
+.text_area{
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    margin-left: 1%;
+}
+.text_area img{
+    width: 100%;
+    height: 100%;
+    padding-top: 12%;
+}
+.right_side {
+    position: relative;
+    margin-left: 30%;
+    width: 70%;
+    height:70%;
+    background-color:#2c3245;
+}
+.btn_area {
+    margin-left: 5%;
+}
+
+.btn_start {
+    position: absolute;
+    width: 35%;
+    height: 30%;
+    margin-top: 5%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn_stop {
+    position: absolute;
+    width: 35%;
+    height: 30%;
+    margin-left: 45%;
+    margin-top: 5%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.on_btn {
+    display: inline-block;
+    text-decoration: none;
+    color:#f9a828;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    border: solid 5px #f9a828;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.off_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #081118;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    border: solid 5px  #081118;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    transition: .4s;
+}
+.on_btn:hover{
+    background:  #fdffab;
+    width: 140px;
+    height: 140px;
+    line-height: 150px;
+}
+.off_btn:hover{
+    background: gray;
+    width: 140px;
+    height: 140px;
+    line-height: 150px;
+}
+.btn_start img {
+    position: relative;
+    text-align: center;
+    width: 45%;
+    height: 45%;
+    margin-top: 25%;
+}
+.btn_stop img {
+    position: relative;
+    text-align: center;
+    width: 45%;
+    height: 45%;
+    margin-top: 25%;
+}
+.nav_main2{
+    position: absolute;
+    height: 30%;
+    width: 63%;
+    margin-top:80%;
+    margin-left: 10%;
+}
+.nav {
+    margin-left: 10%;
+    margin-top: 80%;
+    list-style: none;
+    position: absolute;
+}
+.nav2 {
+    margin-top: 80%;
+    margin-left: 65%;
+    list-style: none;
+    position: absolute;
+}
+.nav li{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+    padding: 1.5rem 0;
+}
+.nav a{
+    color: #000;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #0f5ca0;
+    border-bottom:3px #0f5ca0 dashed;
+}
+
+.nav2 li{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+    padding: 1.5rem 0;
+}
+.nav2 a{
+    color: #000;
+    text-decoration: none;
+}
+.nav2 a:hover{
+    color: #0f5ca0;
+    border-bottom:3px #0f5ca0 dashed;
+}
+
+.tem_area {
+    position: absolute;
+    width: 50%;
+    height: 55%;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+/*温度調子btn*/
+.btn_tem{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+}
+.text_tem {
+    position: relative;
+    width: 95%;
+    height: 15%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px;
+}
+.down_btn,.up_btn{
+    display: inline-block;
+    text-decoration: none;
+    width: 120px;
+    height: 90px;
+    line-height: 110px;
+    border-radius: 50%;
+    border: solid 3px black;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    transition: .4s;
+    background-color:#F3F2EE;
+}
+.down {
+    position:absolute;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 13%;
+}
+.up {
+    position: absolute;
+    width: 30%;
+    margin-left: 70%;
+    margin-top: 10%;
+}
+.down_btn:hover{
+    background:  #7694AB;
+    width: 120px;
+    height: 100px;
+    line-height: 160px;
+}
+.up_btn:hover{
+    background:  #7694AB;
+    width: 120px;
+    height: 100px;
+    line-height: 80px;
+}
+
+
+/*温度表示*/
+.tem_display {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+    background-color: #F3F2EE;
+    border-radius: 3px;
+}
+
+.text {
+    position: absolute;
+    font-size: 80px;
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 10%;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-left: solid 4px #253245;
+    border-top: solid 4px #253245;
+}
+.text h1,h4{
+    display: inline;
+}
+.text h5{
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.text2 {
+    position: absolute;
+    width: 20%;
+    font-size: 30px;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+
+/*機能切り替えボタン*/
+.btn_control{
+    position: absolute;
+    width: 33%;
+    height: 80%;
+    padding-top: 5%;
+    margin-left: 65%;
+    margin-top: 15%;
+    font-size: 20px;
+    background-color: rgba(204, 184, 128, 0.8);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 25px;
+}
+.btn_control a{
+    display: inline-block;
+    padding: 15px 55px;
+    border-radius: 45px;
+    text-decoration: none;
+    transition: .4s;
+    width: 50%;
+    height: 12%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 12%;
+    font-size: 30px;
+    text-decoration: underline;
+    background-color: #F3F2EE;
+}
+.cool_btn{
+    border:  double 7px #123175;
+    color: #123175;
+}
+.hot_btn{
+    border: double 7px  #C10230;
+    color: #C10230;
+}
+.dry_btn{
+    border: double 7px #013a20;
+    color:#013a20;
+}
+.cool_btn:hover{
+    background-color: #b0c4de;
+    color: #0f5ca0;
+}
+.hot_btn:hover{
+    background-color:  #e9967a;
+    color: red;
+}
+.dry_btn:hover{
+    background-color: lightgreen;
+    color: green;
+}
+
+.right_bottom {
+    margin-left: 30%;
+    width: 70%;
+    height: 30%;
+    background-color: #809fb0;
+}
+.func_btn{
+    position: absolute;
+    width: 35%;
+    height: 17%;
+    padding-bottom: 3%;
+    margin-left: 6%;
+    margin-top: 1.5%;
+}
+.func_btn a{
+    float: left;
+    padding: 13px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: .4s;
+    width: 20%;
+    height: 24%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 12%;
+    font-size: 28px;
+    background-color: #F3F2EE;
+    color: #000;
+    border: double 7px #000;
+}
+.func_btn a:hover{
+    color: red;
+    background-color: #C0C2C9;
+}
+@media (max-width: 1750px) { 
+
+.left_side {
+    width: 30%;
+    height: 100%;
+    background-color: #F3F2EE;
+}
+
+.nav_main2{
+    position: absolute;
+    height: 30%;
+    width: 80%;
+    margin-top:75%;
+    margin-left: 2%;
+}
+.nav {
+    margin-left: 10%;
+    margin-top: 100%;
+    list-style: none;
+    position: absolute;
+}
+.nav2 {
+    margin-top: 100%;
+    margin-left: 70%;
+    list-style: none;
+    position: absolute;
+}
+.nav li{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+}
+
+.nav2 li{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+}
+.tem_display {
+    width: 100%;
+    height: 90%;
+    margin-top: 5%;
+    padding-top: 3%;
+    background-color: #F3F2EE;
+    box-shadow:0px 0px 10px -2px;
+    border-radius: 3px;
+}
+.text {
+    position: absolute;
+    font-size: 65px;
+    width: 50%;
+}
+
+.func_btn a{
+    font-size: 25px;
+}
+
+.text_area{
+    margin-left: 2%;
+}
+
+.text_area{
+    position: absolute;
+    width: 98%;
+    height: 90%;
+    margin-left: 1%;
+}
+
+
+ }
+ @media (max-width: 1565px) { 
+
+.nav_main2{
+    height: 30%;
+    width: 80%;
+    margin-top:75%;
+}
+.nav {
+    margin-left: 10%;
+    list-style: none;
+    position: absolute;
+}
+.nav2 {
+    margin-top: 100%;
+    margin-left: 60%;
+    list-style: none;
+    position: absolute;
+}
+.nav li{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+}
+
+.nav2 li{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 0.5;
+}
+.btn_control{
+    margin-left: 63%;
+    width: 35%
+}
+
+.btn_control a{
+    margin-left: 10%;
+}
+
+.func_btn a{
+    font-size: 23px;
+    width: 17%;
+}
+.text_tem {
+    font-size: 23px;
+}
+.func_btn{
+    width: 40%;
+    margin-left: 3%;
+}
+.text_area{
+    position: absolute;
+    margin-top: 10%;
+    width: 85%;
+    height: 75%;
+    margin-left: 1%;
+}
+
+ }
+
+ @media (max-width: 1440px) {
+.nav_main2{
+    margin-top:80%;
+    margin-left: 3%;
+}
+
+.text {
+    font-size: 60px;
+    margin-top: 13%;
+}
+.text2 {
+    font-size: 20px;
+}
+
+.func_btn a{
+    font-size: 20px;
+}
+.btn_control{
+    position: absolute;
+    width: 33%;
+    height: 70%;
+    padding-top: 3%;
+    margin-left: 65%;
+    margin-top: 23%;
+}
+.btn_control a{
+    width: 35%;
+    height: 10%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    font-size: 25px;
+}
+.text_tem {
+    font-size: 20px;
+}
+.down_btn,.up_btn{
+    width: 100px;
+    height: 80px;
+    line-height: 110px;
+}
+.text_area{
+    position: absolute;
+    margin-top: 30%;
+    width: 85%;
+    height: 65%;
+    margin-left: 1%;
+}
+.on_btn {
+    width: 100px;
+    height: 100px;
+}
+
+.off_btn {
+    width: 100px;
+    height: 100px;
+}
+.tem_display {
+    height: 85%;
+}
+
+  }
+
+@media (max-width: 1220px) { 
+.left_side {
+    width: 20%;
+    height: 100%;
+}
+.right_side {
+    margin-left: 20%;
+    width: 80%;
+}
+.right_bottom {
+    margin-left: 20%;
+    width: 80%;
+}
+.btn_control{
+    width: 30%;
+    height: 60%;
+    margin-top: 23%;
+}
+.btn_control a{
+    width: 30%;
+    height: 7%;
+    margin-left: 13%;
+    margin-top: 5%;
+    font-size: 23px;
+}
+.btn_start {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.btn_stop {
+    margin-left: 10%;
+    margin-top: 250px;
+}
+.on_btn {
+    width: 90px;
+    height: 90px;
+}
+
+.off_btn {
+    width: 90px;
+    height: 90px;
+}
+.on_btn:hover{
+    width: 100px;
+    height: 100px;
+    line-height: 120px;
+}
+.off_btn:hover{
+    width: 100px;
+    height: 100px;
+    line-height: 120px;
+}
+.nav_main2{
+    position: relative;
+    height: 45%;
+    margin-top: 470px;
+    margin-left: 10%;
+}
+.nav {
+    margin-left: 3%;
+    margin-top: 80%;
+    list-style: none;
+    position: relative;
+}
+.nav2 {
+    margin-top: 40%;
+    margin-left: 3%;
+    list-style: none;
+    position: relative;
+}
+.nav li{
+    font-size: 16px;
+}
+
+.nav2 li{
+    font-size: 16px;
+}
+.text_area{
+    display: none;
+}
+.tem_display {
+    height: 75%;
+    margin-top: 5%;
+}
+.text {
+    font-size: 48px;
+    margin-left: 45%;
+    margin-top: 16%;
+}
+.text_tem {
+    font-size: 17px;
+}
+.down_btn,.up_btn{
+    width: 85px;
+    height: 75px;
+}
+.down_btn:hover{
+    background:  #7694AB;
+    width: 90px;
+    height: 85px;
+    line-height: 160px;
+}
+.up_btn:hover{
+    background:  #7694AB;
+    width: 90px;
+    height: 85px;
+    line-height: 80px;
+}
+.tem_area {
+    margin-top: 8%;
+}
+.func_btn {
+    width:44%;
+    height: 10%;
+}
+.func_btn a{
+    font-size: 18px;
+}
+.btn_control{
+    margin-top: 10%;
+}
+}
+@media (max-width: 1024px) {
+.left_side { 
+    top: 0%;
+    width: 100%;
+    height: 22%;
+    background-color: #F3F2EE;
+}
+.btn_area {
+    margin-left: 5%;
+}
+
+.btn_start {
+    width: 20%;
+    height: 40%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.btn_stop {
+    width: 20%;
+    height: 40%;
+    margin-left: 23%;
+    margin-top: 2%;
+}
+
+.on_btn {
+    width: 78px;
+    height: 78px;
+    line-height: 80px;
+}
+.off_btn {
+    width: 78px;
+    height: 78px;
+    line-height: 80px;
+}
+.nav_main2{
+    margin-top:2%;
+    margin-left: 5%;
+}
+.nav {
+    margin-left: 65%;
+    margin-top: 2%;
+    list-style: none;
+    position: absolute;
+}
+.nav2 {
+    margin-top: 2%;
+    margin-left: 85%;
+    list-style: none;
+    position: absolute;
+}
+.right_side {
+    margin-left: 0%;
+    margin-top: 20%;
+    width: 100%;
+    height:55%;
+}
+.tem_display {
+    width: 95%;
+    height: 85%;
+    margin-top: 1%;
+}
+.text{
+    margin-top: 7%;
+    font-size:45px;
+}
+.down_btn,.up_btn{
+    width: 90px;
+    height: 65px;
+    margin-top: 0%;
+}
+}
+
+
+
